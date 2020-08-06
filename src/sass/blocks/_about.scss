@@ -1,0 +1,137 @@
+.about {
+    padding-bottom: 65px;
+    padding-top: 70px;
+    p {
+        font-weight: 500;
+        font-size: 14.5px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        line-height: 27px;
+        color: rgba($color: #000000, $alpha: 0.6);
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 50px;
+        p {
+            margin-top: 0;
+            width: 50%;
+            padding-left: 20px;
+            padding-right: 13px;
+        }
+    }
+    &__me {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__myname {
+        position: relative;
+        font-weight: 700;
+        color: rgba($color: #000000, $alpha: 0.6);
+        letter-spacing: 0.3px;
+        span {
+            position: absolute;
+            font-size: 14px;
+            top: 4px;
+            left: -26px;
+        }
+    }
+   
+    &__img {
+        padding: 0 30px;
+        margin-top: 35px;
+        position: relative;
+        &:hover {
+            .overlay {
+                display: none;
+            }
+        }
+        
+        img {
+            width: 100%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            opacity: 0.37;
+            z-index: 2;
+            
+        }
+    }
+    &__subheader {
+        margin-top: 50px;
+        color: rgba($color: #000000, $alpha: 0.55);
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__wrapperscale {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__scale {
+        margin-top: 10px;
+        width: 100%;
+        height: 35px;
+        color: rgba($color: #000000, $alpha: 0.6);
+        line-height: 38px;
+        &:nth-child(odd) {
+            padding-left: 28px;
+            position: relative;
+            font-weight: 500;
+            word-spacing: 8px;
+            letter-spacing: 8px;
+            span {
+                position: absolute;
+                font-size: 16px;
+                left: 1px;
+                top: 10px;
+            }
+            &:nth-child(5) {
+                span {
+                    font-size: 17px;
+                }
+            }
+            &:nth-child(3) {
+                span {
+                    font-size: 14px;
+                    top: 11px;
+                }
+            }
+        }
+        &:nth-child(even) {
+            background-color: rgba($color: #000000, $alpha: 0.06);
+            span {
+                display: block;
+                height: 100%;
+                width: 90%;
+                background-color: rgba($color: #000000, $alpha: 0.6);
+                font-size: 15px;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;  
+            }
+        }  
+        &:nth-child(4) {
+            span {
+                width: 85%;
+            }
+        }
+        &:nth-child(6) {
+            span {
+                width: 75%;
+            }
+        }
+    }
+}
+.title {
+    @include title;
+}
+.subtitle {
+    @include subtitle;
+}

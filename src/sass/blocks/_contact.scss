@@ -1,0 +1,22 @@
+.contact {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background: url('../img/ths.jpg') center (center/cover) no-repeat fixed grey;
+    opacity: 0.73;
+    &__header {
+        position: absolute;
+        padding-top: 3px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 64px;
+        letter-spacing: 9px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        z-index: 2;
+    }
+}
+
